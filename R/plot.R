@@ -36,13 +36,13 @@ plot.mids <- function(x, y = NULL, theme = mice.theme(), layout = c(2, 3),
       )
       lattice::panel.text(
         x = 0, y = 0.5, pos = 4,
-        lab = factor.levels[which.panel[which.given]]
+        labels = factor.levels[which.panel[which.given]]
       )
     }
     if (which.given == 2) {
       lattice::panel.text(
         x = 1, y = 0.5, pos = 2,
-        lab = factor.levels[which.panel[which.given]]
+        labels = factor.levels[which.panel[which.given]]
       )
     }
   }
