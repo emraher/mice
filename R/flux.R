@@ -163,7 +163,7 @@ fluxplot <- function(data, local = names(data),
     axis(2, lwd = lwd, las = las)
     abline(1, -1, lty = 2, lwd = lwd)
     if (labels) {
-      text(x = f$influx, y = f$outflux, label = names(data), ...)
+      text(x = f$influx, y = f$outflux, labels = names(data), ...)
     } else {
       points(x = f$influx, y = f$outflux, ...)
     }
